@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="ForAddNew.css">
+    <link rel="stylesheet" href="false.css">
+    <link rel="stylesheet" href="reset.css">
+
+    <title>Лабораторная работа №7</title>
+</head>
+
+<body>
+
+   <div id="app">
+    <header class="head">
+        <div class="container">
+            <div class="container_content">
+                <img src="./img/BlogLogo.png" alt="Logo">
+
+                <div class="head_flex">
+                    <img src="img/Profile.svg" alt="Profile">
+
+                    <div>
+                        <a class="user_logon">@UserAccountLogin</a>
+                        <button class="add_button">Новая публикация</button>
+                        <a class="link" href="#">Выйти</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="block">
+        <div class="container">
+            <div class="zagolovich">
+                <div class="block_avtor">
+                    <h3 class="head_name" v-html="author_name">Юзьеров Константин Агапович</h3>
+                    <a v-html="author_login" class="User_Logon_Avtor" href="#">@OtherUserAccountName</a>
+                    <div class="User_Name">
+                        <p>Подписчиков:<span v-html="subscribers">57</span>
+                        </p>
+                        
+                        <p>Подписан: <span v-html="signed">4</span>
+                        </p>
+                        
+                    </div>
+
+                    <p>Записей: <span v-html="post_count">108</span>
+                    </p>
+                    <div><input type="text" v-model="author"></div>
+                </div>
+                <div class="zagolovich_left">
+                    <div class="block_items">
+
+                        <div v-for="it in filteredList" class="item">
+                            <img v-bind:src="it.image" alt="Картинка">
+    
+                            <div class="item_text">
+                                <h3>{{it.title}}</h3>
+                                <p class="item_p">{{it.intro}}</p>
+                            </div>
+    
+                            <div class="line">
+                                <span  v-for="label in it.labels" v-bind:data-categories="label" class="written">
+                                    {{label}}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="load_items">Загрузить ещё 6</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_links">
+                <a class="footer_link" href="#">Об авторе</a>
+                <a class="footer_link" href="#">Технологии</a>
+            </div>
+
+            <div class="info_blog">
+                <span>© Blog, 2022</span>
+            </div>
+        </div>
+    </footer>
+            
+    </div>
+   </div>
+
+    <script src="/inform.js"></script>
+    <script src="/massive.js"></script>
+    <script src="/massive_lets.js"></script>
+    <script src="/for_vue_work.js"></script>
+    
+</body>
+
+</html>

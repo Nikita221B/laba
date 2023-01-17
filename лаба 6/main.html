@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="false.css">
+    <link rel="stylesheet" href="reset.css">
+
+    <title>Лабораторная работа №6</title>
+</head>
+
+<body>
+
+    <head class="head">
+        <div class="container">
+            <div class="conainer_content">
+                <img src="./img/BlogLogo.png" alt="negrs">
+
+                <div class="head_flex">
+                    <img src="img/Profile.svg" alt="downich">
+
+                    <div>
+                        <a id="Best_id" class="link" href="#">Войти</a>
+                        <a class="link" href="/reg.html">Зарегистрироваться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </head>
+
+    <div class="block">
+        <div class="container">
+            <h1 class="zagolovok">Последние публикации</h1>
+
+            <div class="zagolovich">
+                <div class="zagolovich_left">
+                    <div class="block_items">
+                        <div class="item" data-categories="Git, Console">
+                            <img src="img/image.png" alt="Изображение">
+    
+                            <div class="item_text">
+                                <h3>Работа с Git в Visual Studio Code</h3>
+                                <p class="item_p">Один из способов работать с Гитом.</p>
+                            </div>
+    
+                            <div class="line">
+                                <span class="written">
+                                    Git
+                                </span>
+                                <span class="written">
+                                    Console
+                                </span>
+                            </div>
+                        </div>
+    
+                        <div class="item" data-categories="Figma">
+                            <img src="img/image 1.png" alt="Изображение">
+    
+                            <div class="item_text">
+                                <h3>Adobe покупают Фирму. Всё пропало?</h3>
+                                <p class="item_p">Не факт, но есть разные мнения.</p>
+                            </div>
+    
+                            <div class="line">
+                                <span class="written">
+                                    Figma
+                                </span>
+                            </div>
+                        </div>
+    
+                        <div class="item" data-categories="Education, Career">
+                            <img src="img/image 1-1.png" alt="Изображение">
+    
+                            <div class="item_text">
+                                <h3> Научились программировать. А дальше-то что?</h3>
+                                <p class="item_p">Ученье — свет, а неучение - нету света.</p>
+                            </div>
+    
+                            <div class="line">
+                                <span class="written">
+                                    Обучение
+                                </span>
+                                <span class="written">
+                                    Карьера
+                                </span>
+                            </div>
+                        </div>
+    
+                        <div class="item" data-categories="Education">
+                            <img src="img/image 1-2.png" alt="Изображение">
+    
+                            <div class="item_text">
+                                <h3>Мне тяжело учиться, кто поможет?</h3>
+                                <p class="item_p">Попали в трудную ситуацию? Тогда кликайте на статью.</p>
+                            </div>
+    
+                            <div class="line">
+                                <span class="written">
+                                    Обучение
+                                </span>
+                            </div>
+                        </div>
+    
+                        <div class="item" data-categories="Education, Career">
+                            <img src="img/image 1-3.png" alt="Изображение">
+    
+                            <div class="item_text">
+                                <h3>Ключевые навыки фронтендеров в 2022</h3>
+                                <p class="item_p">Ежегодное исследование рынка от HTML Academy.</p>
+                            </div>
+    
+                            <div class="line">
+                                <span class="written">
+                                    Обучение
+                                </span>
+                                <span class="written">
+                                    Карьера
+                                </span>
+                            </div>
+                        </div>
+    
+                        <div class="item"  data-categories="News">
+                            <img src="img/image 1-4.png" alt="Изображение">
+    
+                            <div class="item_text">
+                                <h3>Фронтенд-новости</h3>
+                                <p class="item_p">WAI-ARIA, новинки HTML-форм и 19 ошибок любого джаваскриптера.</p>
+                            </div>
+    
+                            <div class="line">
+                                <span class="written">
+                                    Новости
+                                </span>
+                            </div>
+                        </div>
+    
+                    </div>
+
+                    <button class="load_items">Добавить ещё 6</button>
+                </div>
+
+                <div class="second_block">
+                    <h3>Рубрики</h3>
+                    
+                    <div class="buttons">
+                        <button class="button" data-categories="Education">Обучение</button>
+                        <button class="button" data-categories="Career">Карьера</button>
+                        <button class="button" data-categories="Figma">Figma</button>
+                        <button class="button" data-categories="Console">Консоль</button>
+                        <button class="button" data-categories="Git">Git</button>
+                        <button class="button" data-categories="News">Новости</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_links">
+                <a class="footer_link" href="#">Об авторе</a>
+                <a class="footer_link" href="#">Технологии</a>
+            </div>
+
+            <div class="info_blog">
+                <span>© Blog, 2022</span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal block_hide">
+        <form class="form_for_login">
+            <div class="Div">
+                <h2 class="login_form">Вход</h2>
+                <img id="exit" class="Imagenava" src="img/Union.svg" alt="Выйти">
+            </div>
+            
+            <div class="Divniymir">
+                <label for="Login_Dnd_JS" class="Login_DnD">Логин</label>
+                <input id="Login_Dnd_JS"  class="cool_inputs" type="text">
+            </div>
+    
+            <div class="Divinchi">
+                <label for="Password_DnD_JS" class="Login_DnD">Пароль</label>
+                <input id="Password_DnD_JS"  class="cool_inputs" type="password">
+            </div>
+    
+            <div class="Lower_styles">
+                <button class="knopka_voiti">Войти</button>
+                <a class="FORGET" href="#">Забыли пароль?</a>
+            </div>
+    
+            
+        </form>
+    </div>
+
+    <script src="/newdnd copy.js"></script>
+</body>
+
+</html>
