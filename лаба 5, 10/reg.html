@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="regses.css">
+    <link rel="stylesheet" href="reset.css">
+
+    <title>Регистрация</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="container_content">
+                <img src="./img/BlogLogo.png" alt="Logo">
+
+                <div class="header_flex">
+                    <img src="img/Profile.svg" alt="Profile">
+
+                    <div>
+                        <a class="link" href="#">Войти</a>
+                        <a class="link" href="#">Зарегистрироваться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="block">
+        <div class="container">
+            <h1>Регистрация</h1>
+
+            <form class="Delta">
+                <div class="idk">
+                    <div class="forma_reg">
+                        <label class="Font_machine" for="">Имя</label>
+                        <input id="inputname" class="forminput" type="text"/>
+                    </div>
+                    <div class="forma_reg">
+                        <label class="Font_machine" for="">Фамилия</label>
+                        <input id="inputfamilia" class="forminput" type="text"/>
+                    </div>
+                </div>
+
+                <div class="idk">
+                    <div class="forma_reg">
+                        <label class="Font_machine" for="">Логин *</label>
+                        <input id="inputlogin" id="loginptid" class="forminput" type="text" required pattern="[A-Za-zА-Яа-я0-9\-@.+_]{5,150}"/>
+
+                        <div>
+                            <div class="margin_bot">
+                                <span id="onlyworddigitspecialsym">Только буквы, цифры и символы @.+-_</span>
+                            </div>
+
+                            <div class="margin_bot">
+                                <span class="vailidsolution">Не более 150 символов</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="forma_reg">
+                        <label class="Font_machine" for="">E-mail</label>
+                        <input id="inputemail" class="forminput" type="email" required maxlength="255" />
+                    </div>
+
+                </div>
+
+                <div class="idk">
+                    <div class="forma_reg">
+                        <label class="Font_machine" for="">Пароль*</label>
+                        <input id="inputpass" class="forminput" type="password" maxlength="255" />
+
+                        <div>
+                            <div class="margin_bot">
+                                <spann id="mineightsym">Минимум 8 символов</span>
+                            </div>
+
+                            <div class="margin_bot">
+                                <span id="onlydigit">Не может состоять только из цифр</span>
+                            </div>
+
+                            <div class="margin_bot">
+                                <span id="notmatchlogin">Не должен совпадать с логином</span>
+                            </div>
+
+                            <div class="margin_bot">
+                                <span>Не должен быть в базе популярных паролей</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="forma_reg">
+                        <label class="Font_machine" for="">Подтверждение пароля*</label>
+                        <input id="confirmpass" class="forminput" type="" required maxlength="255" />
+
+                        <div class="margin_bot">
+                            <span id="equalspasswords">Пароль совпадает</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="margin_top">
+                    <input id="agreed" type="checkbox" checked>
+                    <label>Даю своё согласие на обработку персональных данных</label>
+                </div>
+
+                <button id="bratton" class="Cool_Button" type="submit">Зарегистрировать</button>
+            </form>
+            
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_links">
+                <a class="footer_link" href="#">Об авторе</a>
+                <a class="footer_link" href="#">Технологии</a>
+            </div>
+
+            <div class="info_blog">
+                <span>© Blog, 2022</span>
+            </div>
+        </div>
+    </footer>
+
+        </div>
+    </div>
+
+    <script src="reg_for.js"></script>
+</body>
+
+</html>

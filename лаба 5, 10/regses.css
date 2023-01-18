@@ -1,0 +1,136 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 0 15px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #624C91;
+    padding: 15px 60px;
+}
+
+.container_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_flex {
+    display: flex;
+
+    align-items: center;
+}
+
+.link {
+    font-size: 15px;
+    color: #FFFFFF;
+    margin-left: 28px;
+    line-height: 18px;
+}
+
+.block {
+    margin: 60px 0px;
+}
+
+body {
+    background: #F3F3F3;
+}
+
+.forma_reg {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.forminput {
+    width: 520px;
+    border: 1px solid rgba(17, 34, 68, 0.5);
+    border-radius: 5px;
+    height: 74px;
+    padding: 24px 0px 24px 24px;
+}
+
+.idk {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.idk:first-child {
+    margin-top: 0px;
+}
+
+.Font_machine {
+    color: rgba(17, 34, 68, 0.5);
+}
+
+.Delta {
+    padding: 40px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.margin_bot {
+    margin-top: 2px;
+}
+
+.margin_top {
+    margin-top: 20px;
+}
+
+.Cool_Button {
+    margin-top: 20px;
+    width: 218px;
+    height: 58px;
+
+    background-color: #624C90;
+    color: #fff;
+
+    border-radius: 7px;
+
+}
+
+.footer {
+    margin-top: 60px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_link:nth-child(2) {
+    margin-left: 40px;
+}
+
+.footer_link {
+    color: #366AF3;
+}
+
+button:disabled {
+    background-color: grey;
+    pointer-events: none;
+}
+
+.vailidsolution {
+    color: green;
+    padding-left: 20px;
+    background: left 0% no-repeat url(img/Datebayo.svg);
+}
+
+.vailidNOsolution {
+    color: red;
+    padding-left: 20px;
+    background: left 0% no-repeat url(img/x-icon.svg);
+}
+
+.inputnpvailid {
+    background-color: red;
+}

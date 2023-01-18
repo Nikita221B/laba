@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="ForAddNew.css">
+    <link rel="stylesheet" href="reset.css">
+
+    <title>Добавление</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="container_content">
+                <img src="./img/BlogLogo.png" alt="Logo">
+
+                <div class="header_flex">
+                    <img src="img/Profile.svg" alt="Profile">
+
+                    <div>
+                        <a class="user_logon">@UserAccountLogin</a>
+                        <button class="add_button">Новая запись</button>
+                        <a class="link" href="#">Выйти</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="block">
+        <div class="container">
+            <h1 class="margin_bot">Добавить запись</h1>
+            <form class="form_new">
+                <div class="button_margin">
+                    <label class="lable_style" for="head">Заголовок</label>
+                    <input class="input_label" type="text" required maxlength="255" title="не более 255 символов" />
+                </div>
+                <div class="button_margin">
+                    <label class="lable_style" for="text">Текст</label>
+                    <textarea class="input_label input_label_height"></textarea>
+                </div>
+                <div class="button_margin">
+                    <label class="lable_style" for="category">Выберите категорию</label>
+                    <select class="input_label">
+                        <option>Без категории</option>
+                        <option>Крендельки</option>
+                        <option>Вареники</option>
+                    </select>
+                </div>
+                <div class="button_margin test">
+                    <input id="file" class="hide" type="file">
+                    <label class="file_new" for="file">
+
+                        <span class="screpka">
+                            <img class="" src="img/Cool.svg" alt="Выбрать файл">
+                        </span>
+                        <span class="">Прикрепить файл изображения</span>
+
+                    </label>
+                </div>
+
+                <div class="button_margin">
+                    <button class="button_post" type="submit">Опубликовать</button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_links">
+                <a class="footer_link" href="#">Об авторе</a>
+                <a class="footer_link" href="#">Технологии</a>
+            </div>
+
+            <div class="info_blog">
+                <span>© Blog, 2022</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
