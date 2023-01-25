@@ -1,0 +1,12 @@
+.title_author {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.left-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}

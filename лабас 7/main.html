@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="reset_main.css">
+
+    <title>Laboratory Work 7</title>
+</head>
+
+<body>
+<div id="vueId">
+
+<header class="header">
+    <div class="container">
+        <div class="container_content">
+            <img src="Pictures/logo.png" alt="Alternative">
+
+            <div class="header_display">
+                <img src="Pictures/profile.svg" alt="Alternative">
+
+                <div>
+                    <a class="link" href="#">Войти</a>
+                    <a class="link" href="#">Зарегистрироваться</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="block">
+    <div class="container">
+
+        <h1>Последние публикации</h1>
+
+        <div class="header_d">
+            <div class="header_d_left">
+                <div class="block_items">
+                    <div v-for="it in posts" class="item">
+                        <img v-bind:src="it.image" alt="Картинка">
+                            <div class="item_text">
+                                <h3>{{it.title}}</h3>
+                                <p class="item_p">{{it.intro}}</p>
+                                <div class="line">
+                                    <div v-for="label in it.labels" class="written" v-bind:data-categories="label">{{label}}</div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+                <button class="load_items">Загрузить ещё 6</button>
+
+            </div>
+
+            <div class="second_block">
+
+                <h3>Рубрики</h3>
+
+                <div class="buttons">
+                    <button class="button" data-categories="Education">Обучение</button>
+                    <button class="button" data-categories="Career">Карьера</button>
+                    <button class="button" data-categories="Figma">Figma</button>
+                    <button class="button" data-categories="Console">Консоль</button>
+                    <button class="button" data-categories="Git">Git</button>
+                    <button class="button" data-categories="News">Новости</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer_links">
+            <a class="footer_link" href="#">Об авторе</a>
+            <a class="footer_link" href="#">Технологии</a>
+        </div>
+
+        <div class="info_blog">
+            <span style="color: #999999">© Blog, 2022</span>
+        </div>
+
+    </div>
+</footer>
+
+</div>
+
+<script src="vueSource.js"></script>
+<script src="data.js"></script>
+<script src="vue.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

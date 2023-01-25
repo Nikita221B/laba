@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="reset_main.css">
+    <link rel="stylesheet" href="log__in.css">
+
+    <title>Laboratory Work 4</title>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="container_content">
+            <img src="./Pictures/logo.png" alt="Alternative">
+
+            <div class="header_display">
+                <img src="Pictures/profile.svg" alt="Alternative">
+
+                <div>
+                    <a id="log__in" class="link" href="#">Войти</a>
+                    <a class="link" href="form.html">Зарегистрироваться</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="log__in__window display__none">
+    <form class="log__in__form">
+
+        <div class="log__in__form__title">
+            <h2 style="display: block;">Вход</h2>
+            <img id="quit" class="quit__interact__svg" src="Pictures/quit.svg" alt="Выйти">
+        </div>
+
+        <div class="login__input">
+            <label class="label__perform">Логин</label>
+            <label>
+                <input class="input__perform" type="text">
+            </label>
+        </div>
+
+        <div class="passwd__input">
+            <label class="label__perform">Пароль</label>
+            <label>
+                <input class="input__perform" type="password">
+            </label>
+        </div>
+
+        <div class="bottom__btn">
+            <button class="btn__login">Войти</button>
+            <a class="forget__passwd" href="#">Забыли пароль?</a>
+        </div>
+
+    </form>
+</div>
+
+<div class="block">
+    <div class="container">
+
+        <h1>Последние публикации</h1>
+
+        <div class="header_d">
+            <div class="header_d_left">
+                <div class="block_items">
+                    <div class="item" data-categories="Git, Console">
+
+                        <img src="Pictures/picture_1.png" alt="Alternative">
+
+                        <div class="item_text">
+                            <h3>Работа с Git в Visual Studio Code</h3>
+                            <p class="item_p">Один из способов работать с Гитом.</p>
+                        </div>
+
+                        <div class="line">
+                            <span class="written">Git</span>
+                            <span class="written">Console</span>
+                        </div>
+
+                    </div>
+
+                    <div class="item" data-categories="Figma">
+                        <img src="Pictures/picture_2.png" alt="Alternative">
+
+                        <div class="item_text">
+                            <h3>Adobe покупают Фигму. Всё пропало?</h3>
+                            <p class="item_p">Не факт, но есть разные мнения.</p>
+                        </div>
+
+                        <div class="line">
+                            <span class="written">Figma</span>
+                        </div>
+
+                    </div>
+
+                    <div class="item" data-categories="Education, Career">
+                        <img src="Pictures/picture_3.png" alt="Alternative">
+
+                        <div class="item_text">
+                            <h3>Все научились программировать. А дальше-то что?</h3>
+                            <p class="item_p">Ученье — свет.</p>
+                        </div>
+
+                        <div class="line">
+                            <span class="written">Обучение</span>
+                            <span class="written">Карьера</span>
+                        </div>
+                    </div>
+
+                    <div class="item" data-categories="Education">
+                        <img src="Pictures/picture_4.png" alt="Alternative">
+
+                        <div class="item_text">
+                            <h3>Мне тяжело учиться, кто поможет?</h3>
+                            <p class="item_p">Попали в патовую ситуацию? Тогда кликайте на статью.</p>
+                        </div>
+
+                        <div class="line">
+                            <span class="written">Обучение</span>
+                        </div>
+                    </div>
+
+                    <div class="item" data-categories="Education, Career">
+                        <img src="Pictures/picture_5.png" alt="Alternative">
+
+                        <div class="item_text">
+                            <h3>Ключевые навыки фронтендеров в 2022</h3>
+                            <p class="item_p">Ежегодное исследование рынка от HTML Academy.</p>
+                        </div>
+
+                        <div class="line">
+                            <span class="written">Обучение</span>
+                            <span class="written">Карьера</span>
+                        </div>
+                    </div>
+
+                    <div class="item" data-categories="News">
+                        <img src="Pictures/picture_6.png" alt="Alternative">
+
+                        <div class="item_text">
+                            <h3>Фронтенд-новости</h3>
+                            <p class="item_p">WAI-ARIA, новинки HTML-форм и 12 ошибок любого джаваскриптера.</p>
+                        </div>
+
+                        <div class="line">
+                            <span class="written">Новости</span>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="load_items">Загрузить ещё 6</button>
+
+            </div>
+
+            <div class="second_block">
+
+                <h3>Рубрики</h3>
+
+                <div class="buttons">
+                    <button class="button" data-categories="Education">Обучение</button>
+                    <button class="button" data-categories="Career">Карьера</button>
+                    <button class="button" data-categories="Figma">Figma</button>
+                    <button class="button" data-categories="Console">Консоль</button>
+                    <button class="button" data-categories="Git">Git</button>
+                    <button class="button" data-categories="News">Новости</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer_links">
+            <a class="footer_link" href="#">Об авторе</a>
+            <a class="footer_link" href="#">Технологии</a>
+        </div>
+
+        <div class="info_blog">
+            <span style="color: #999999">© Blog, 2022</span>
+        </div>
+
+    </div>
+</footer>
+
+<script src="main.js"></script>
+<script src="log__in.js"></script>
+
+</body>
+</html>

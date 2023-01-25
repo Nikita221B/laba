@@ -1,0 +1,86 @@
+.block_show {
+    display: block;
+}
+
+.display__none {
+    display: none;
+}
+
+.log__in__form{
+    left: 50%;
+    padding: 28px 32px;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border-radius: 8px;
+    position: fixed;
+    top: 50%;
+    width: 480px;
+}
+
+.log__in__form__title{
+    justify-content: space-between;
+    display: flex;
+}
+
+.quit__interact__svg {
+    display: block;
+    cursor: pointer;
+}
+
+.input__perform{
+    display: block;
+    margin-top: 4px;
+    width: 100%;
+    padding: 24px 0 24px 24px;
+    border: 1px solid #1122447F;
+    border-radius: 5px;
+}
+
+.label__perform{
+    display: block;
+    color: #1122447F;
+}
+
+.login__input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 28px;
+}
+
+.passwd__input{
+    margin-top: 16px;
+}
+
+.btn__login{
+    padding: 20px 40px;
+    color: #fff;
+    background-color: #624C90;
+    border-radius: 8px;
+    border: 1px solid #624C90;
+}
+
+.forget__passwd{
+    margin-left: 20px;
+    font-weight: bold;
+    color: #624C91;
+}
+
+.bottom__btn{
+    margin-top: 16px;
+}
+
+.log__in__window {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    box-shadow: 0 3px 10px -.5px #00000033;
+    padding: 30px;
+    border-radius: 3px;
+    background-color: #624C90B2;
+    transition: 0.3s all;
+}

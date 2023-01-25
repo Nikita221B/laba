@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="new__post.css">
+    <link rel="stylesheet" href="reset_main.css">
+
+    <title>Добавление</title>
+</head>
+
+<body>
+
+<header class="header__perform">
+    <div class="container">
+
+        <div class="flex__space__between">
+
+            <img src="Pictures/logo.png" alt="Our Logo">
+
+            <div class="flex__center">
+                <img src="Pictures/profile.svg" alt="Your Profile">
+
+                <div>
+                    <a class="btn__login">@UserAccountLogin</a>
+                    <button class="btn__new__post">Новая запись</button>
+                    <a class="btn__quit" href="#">Выйти</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<div class="body__perform">
+    <div class="container">
+
+        <p class="add__title">Добавить запись</p>
+
+        <form class="input__form">
+            <div class="inputs__margin">
+                <label class="label__perform">Заголовок</label>
+                <label>
+                    <input class="input__field" type="text" required maxlength="255"/>
+                </label>
+            </div>
+
+            <div class="inputs__margin">
+                <label class="label__perform">Текст</label>
+                <label>
+                    <textarea style="height: 230px" class="input__field"></textarea>
+                </label>
+            </div>
+
+            <div class="inputs__margin">
+                <label class="label__perform">Выберите категорию</label>
+                <label>
+                    <select class="input__field">
+                        <option>Без категории</option>
+                        <option>Категория 1</option>
+                        <option>Категория 2</option>
+                        <option>Категория 3</option>
+                        <option>Категория 4</option>
+                    </select>
+                </label>
+            </div>
+
+            <div style="display: flex" class="inputs__margin">
+                <input style="display: none" type="file">
+
+                <label class="attach__image">
+                        <span>
+                            <img src="Pictures/attach.svg" alt="Выбрать файл">
+                        </span>
+                    <span>Прикрепить файл изображения</span>
+                </label>
+
+            </div>
+
+            <div class="inputs__margin">
+                <button class="btn__post" type="submit">Опубликовать</button>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+
+<footer class="footer__perform">
+    <div class="container">
+        <div style="color: #366AF3;">
+            <a class="link__item" href="#">Об авторе</a>
+            <a class="link__item" href="#">Технологии</a>
+        </div>
+
+        <div style="color: #999999">© Blog, 2022</div>
+    </div>
+</footer>
+
+</body>
+</html>
