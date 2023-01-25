@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="reset_form.css">
+
+    <title>Регистрация</title>
+</head>
+
+<body>
+<header>
+    <div class="container">
+
+        <img src="Pictures/logo.png" alt="Извините, произошла ошибка. Фотография не загружена">
+
+        <nav class="in__center">
+            <img class="in__center" src="Pictures/profile.svg" alt="Извините, произошла ошибка. Фотография не загружена">
+            <a class="links underline" href="#">Войти</a>
+            <a class="links underline" href="#">Зарегистрироваться</a>
+        </nav>
+
+    </div>
+</header>
+
+<form class="block">
+
+    <h1 class="registration__text">Регистрация</h1>
+
+    <div class="registration__form">
+        <div class="input">
+
+            <div class="input__item">
+                <label class="input__title">Имя</label>
+                <label>
+                    <input id="name" class="input__field" type="text">
+                </label>
+            </div>
+
+            <div class="input__item">
+                <label class="input__title">Фамилия</label>
+                <label>
+                    <input id="surname" class="input__field" type="text">
+                </label>
+            </div>
+
+            <div class="input__item">
+                <label class="input__title">Логин *</label>
+                <label for="login"></label><input id="login" required class="input__field" type="text">
+
+                <div class="validation__text">
+                    <div class="flex__display">
+                        <p id="login__validation__1__ico">
+                        <p id="login__validation__1__text">Только буквы, цифры и символы @.+-_</p>
+                    </div>
+
+                    <div class="flex__display">
+                        <p id="login__validation__2__ico">
+                        <p id="login__validation__2__text">От 5 до 150 символов</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="input__item">
+                <label class="input__title">E-mail</label>
+                <label>
+                    <input id="email" class="input__field" type="email">
+                </label>
+            </div>
+
+            <div class="input__item">
+
+                <label class="input__title">Пароль *</label>
+
+                <label for="password"></label><input id="password" required class="input__field" type="password">
+
+                <div class="validation__text">
+                    <div class="flex__display">
+                        <p id="password__validation__1__ico">
+                        <p id="password__validation__1__text">Минимум 8 символов</p>
+                    </div>
+
+                    <div class="flex__display">
+                        <p id="password__validation__2__ico">
+                        <p id="password__validation__2__text">Не может состоять только из цифр</p>
+                    </div>
+
+                    <div class="flex__display">
+                        <p id="password__validation__3__ico">
+                        <p id="password__validation__3__text">Не должен совпадать с логином</p>
+                    </div>
+
+                    <div class="flex__display">
+                        <p id="password__validation__4__ico"></p>
+                        <p id="password__validation__4__text">Не должен быть в базе популярных паролей</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="input__item">
+
+                <label class="input__title">Подтверждения пароля *</label>
+
+                <label for="repeat__password"></label><input id="repeat__password" required class="input__field" type="password">
+
+                <div class="validation__text">
+                    <div class="flex__display">
+                        <p id="repeat__password__ico">
+                        <p id="repeat__password__text">Пароли совпадают</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="personal__data">
+            <label for="personal__data__agreement"></label><input required id="personal__data__agreement" type="checkbox">
+            <label style="margin-left: 16px">Даю своё согласие на обработку персональных данных</label>
+        </div>
+
+        <button id="register" class="register__button">Зарегистрировать</button>
+    </div>
+</form>
+
+<footer>
+    <div class="block">
+        <div class="container__footer">
+
+            <div class="in__center">
+                <a href="https://github.com/UndeadKali/web_labs/" class="links footer__link">Об авторе</a>
+                <a href="#" class="links footer__link">Технологии</a>
+            </div>
+
+            <p style="color: #999999">© Blog, 2022</p>
+        </div>
+    </div>
+</footer>
+
+<script src="form.js"></script>
+
+</body>
+</html>

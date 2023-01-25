@@ -1,0 +1,157 @@
+.validated {
+    color: green;
+}
+
+.validated__img {
+    content:url("Pictures/validated.svg");
+}
+
+.not__validated {
+    color: red;
+}
+
+.not__validated__img {
+    content:url("Pictures/not_validated.svg");
+}
+
+.registration__text {
+    font-weight: 800;
+    font-family: Arial, serif;
+    font-size: 40px;
+    margin-top: 60px;
+}
+
+.registration__form {
+    border-radius: 8px;
+    padding: 40px;
+    margin-top: 5%;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.input__title {
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 20px;
+    color: #1122447F;
+}
+
+.register__button {
+    font-family: Arial, serif;
+    background-color: #6244a1;
+    color: white;
+    width: 200px;
+    height: 60px;
+    font-weight: 550;
+    border-radius: 8px;
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+.input__field {
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 4px;
+    border: 1px solid #1122447F;
+    font-style: normal;
+    padding: 24px 0 24px 24px;
+    height: 66px;
+}
+
+button[disabled] {
+    color: white;
+    background-color: #CCCCCC;
+}
+
+.validation__text {
+    padding-left: 30px;
+    margin-top: 10px;
+}
+
+.input {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 40px;
+}
+
+.input__item {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+
+p {
+    font-weight: 500;
+    color: #747474;
+    margin-left: 16px;
+}
+
+.flex__display {
+    display: flex;
+}
+
+.personal__data {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    text-align: left;
+}
+
+body {
+    background-color: #F3F3F3;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.block {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.in__center {
+    display: flex;
+    align-items: center;
+}
+
+.links {
+    margin-left: 20px;
+    padding-bottom: 3px;
+    font-size: 18px;
+}
+
+header {
+    background-color: #6244a1;
+    padding: 20px 60px 20px 60px;
+}
+
+.underline {
+    color: white;
+    text-decoration: underline;
+    font-weight: 510;
+    font-family: Arial, serif;
+}
+
+.footer__link {
+    color: #366AF3;
+    border-bottom: 1px solid #366AF3;
+}
+
+footer {
+    margin: 60px 0;
+}
+
+.container__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
